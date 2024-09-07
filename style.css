@@ -32,6 +32,7 @@ html {
 
 body {
   backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(2rem);
   position: relative;
   background-image: url("");
   background-position: 50% 0%;

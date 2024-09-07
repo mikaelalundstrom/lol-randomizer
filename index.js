@@ -210,7 +210,7 @@ async function renderRandomChamp(randomChamp) {
       roleRef.classList.add("role");
       const roleFigureRef = document.createElement("figure");
       const roleImgRef = document.createElement("img");
-      roleImgRef.src = `./assets/icon-${role}.png`;
+      roleImgRef.src = `./assets/icon-${role.toLowerCase()}.png`;
       roleImgRef.alt = role;
       roleFigureRef.appendChild(roleImgRef);
       roleRef.appendChild(roleFigureRef);
@@ -330,7 +330,7 @@ function renderPoolList(champions, type) {
       const roleRef = document.createElement("figure");
       roleRef.classList.add("role");
       const roleImgRef = document.createElement("img");
-      roleImgRef.src = `./assets/icon-${role}.png`;
+      roleImgRef.src = `./assets/icon-${role.toLowerCase()}.png`;
       roleImgRef.alt = role;
       roleRef.appendChild(roleImgRef);
       rolesRef.appendChild(roleRef);

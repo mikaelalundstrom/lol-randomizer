@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <title>Champion Randomizer</title>
+  </head>
+  <body>
+    <div class="body-background"></div>
+    <a href="" class="icon"
+      ><figure class="icon"><i class="ph-bold ph-dice-three"></i></figure
+    ></a>
+    <header>
+      <h1>Champion Randomizer</h1>
+    </header>
+    <main>
+      <section class="result"></section>
+      <section class="role-buttons">
+        <button class="role all active">All</button>
+        <button class="role top active">
+          <figure><img src="./assets/icon-top.png" alt="top" /></figure>
+          Top
+        </button>
+        <button class="role jungle active">
+          <figure><img src="./assets/icon-jungle.png" alt="jungle" /></figure>
+          Jungle
+        </button>
+        <button class="role middle active">
+          <figure><img src="./assets/icon-middle.png" alt="middle" /></figure>
+          Middle
+        </button>
+        <button class="role bottom active">
+          <figure><img src="./assets/icon-bottom.png" alt="bottom" /></figure>
+          Bottom
+        </button>
+        <button class="role support active">
+          <figure><img src="./assets/icon-support.png" alt="support" /></figure>
+          Support
+        </button>
+      </section>
+
+      <button class="randomize">Randomize</button>
+      <section class="customize-pool">
+        <div class="list included">
+          <h3 class="list-title">Included Champions <span></span></h3>
+          <input class="search" type="text" placeholder="Search..." />
+          <ul class="list-items-container"></ul>
+        </div>
+        <figure class="switch"><i class="ph ph-arrows-left-right"></i></figure>
+
+        <div class="list excluded">
+          <h3 class="list-title">Excluded Champions <span></span></h3>
+          <input class="search" type="text" placeholder="Search..." />
+          <ul class="list-items-container"></ul>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="text">
+          <h2>About the League Randomizer</h2>
+          <p>
+            Randomize League of Legends champions with a role filter. You can select multiple roles
+            at once, or just one (the choice is yours). You can also randomize the skin for
+            individual champions. The roles assigned to each champion are based on
+            <a href="">this list.</a> It combines data straight from the game client, as well as
+            those statistically determined by third party analytics services. It is also possible to
+            include/exclude champions from the pool (your browser will remember your selection) to
+            customize your randomization further.
+          </p>
+
+          <p>
+            I don't intend for this page to be wildely used, it was made on a request from a friend
+            and I saw it as a great opportunity to challenge myself to make a simple web app. New
+            champions are added to the pool manually(because of the custom role assignment), but
+            skins/images stays up-to-date automatically since they are fetched directly from the
+            League API.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <p>Champion Randomizer</p>
+        <a href="#">
+          <figure class="icon"><i class="ph-bold ph-dice-three"></i></figure
+        ></a>
+      </div>
+      <p class="boilerplate">
+        Champion Randomizer is not endorsed by Riot Games and does not reflect the views or opinions
+        of Riot Games or anyone officially involved in producing or managing Riot Games properties.
+        Riot Games and all associated properties are trademarks or registered trademarks of Riot
+        Games, Inc
+      </p>
+    </footer>
+    <script src="./champions.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
